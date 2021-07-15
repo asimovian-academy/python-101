@@ -33,6 +33,22 @@
             </map>
           </value>
         </entry>
+        <entry key="86636">
+          <value>
+            <map>
+              <entry key="qWYfJV200ML6UV2SkbJLoy">
+                <value>
+                  <PublishedNotebookState>
+                    <option name="id" value="EYaindc13cIrootwB7mFo2" />
+                    <option name="link" value="https://view.datalore.io/notebook/EYaindc13cIrootwB7mFo2" />
+                    <option name="owner" value="qWYfJV200ML6UV2SkbJLoy" />
+                    <option name="public" value="true" />
+                  </PublishedNotebookState>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
