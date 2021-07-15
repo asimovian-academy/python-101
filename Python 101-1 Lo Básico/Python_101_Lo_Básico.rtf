@@ -1,0 +1,143 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Python con ejemplos\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Lo b\u225?sico\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Bienvenidos al curso de Python con Ejemplos\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Para continuar con la gloriosa tradici\u243?n de un curso introductorio, escribiremos\line
+como nuestro primer programa, el ya famoso `Hola Mundo!`, es decir, instruiremos \line
+a la computadora a que imprima esta leyenda en la pantalla.\line
+"""\line
+print("Hola mundo!")\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 Hola mundo!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+COmo observas, todo el texto que este escrito en este mismo formato es IGNORADO\line
+por la computadora. Esto le llamamos un *comentario*, que es \u250?til para que \line
+nuestros colaboradores entiendan que estamos tratando de hacer.\line
+"""\line
+# Otra opci\u243?n para comentar es poner el texto despu\u233?s de un hashtag\line
+# Pero esto s\u243?lo fuciona para una l\u237?nea\line
+# Por lo que si quisieras hacer un comentario muy largo\line
+# Como el que estoy escribiendo, tendr\u237?as que usar un hashtag\line
+# Por cada rengl\u243?n que escribas y la verdad es muy \line
+# Cansado y tedioso. \line
+# Ocupa este formato s\u243?lo para comentarios cortos!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 '\\nCOmo observas, todo el texto que este escrito en este mismo formato es IGNORADO\\npor la computadora. Esto le llamamos un *comentario*, que es \u250?til para que \\nnuestros colaboradores entiendan que estamos tratando de hacer.\\n'\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Lo primero que debemos saber es como declarar variables, que puede  ser decimales,\line
+cadenas (de caracteres), enteros o booleanos (falso/verdaderas)\line
+En Python es muy f\u225?cil! S\u243?lo tienes que darles un nombre y asignarles un valor.\line
+\line
+Adem\u225?s, podemos imprimir su valor para verlo en pantalla.\line
+"""\line
+algun_decimal = 3.14159\line
+print(algun_decimal)\line
+\line
+alguna_literal = "Hola"\line
+print(alguna_literal)\line
+\line
+algun_entero = 2019\line
+print(algun_entero)\line
+\line
+algun_booleano = True # El otro valor booleano es False \line
+print(algun_booleano)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 3.14159\line
+Hola\line
+2019\line
+True\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Podemos realizar operaciones entre variables del mismo tipo. Intentemos primero\line
+con n\u250?meros decimales.\line
+"""\line
+x = 1.5\line
+y = 2.4\line
+print(x+y)\line
+print(x-y)\line
+print(x*y)\line
+print(x/y)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 3.9\line
+-0.8999999999999999\line
+3.5999999999999996\line
+0.625\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+\u191?Qu\u233? pasa si intentamos los mismo con n\u250?mero enteros?\line
+"""\line
+x = 3\line
+y = 2\line
+print(x+y)\line
+print(x-y)\line
+print(x*y)\line
+print(x/y)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 5\line
+1\line
+6\line
+1.5\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Como puedes observar, la divisi\u243?n entre dos enteros no necesariamente es entera.\line
+Sin embargo, a veces necesitamos calcular el cociente y el residuo de tales\line
+divisiones. Para esto tenemos dos operaciones especiales.\line
+"""\line
+x = 7\line
+y = 3\line
+print(x//y) #cociente\line
+print(x%y) #residuo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 2\line
+1\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Algunas operaciones en Python est\u225?n sobre cargadas. Por ejemplo, podemos sumar\line
+cadenas\line
+"""\line
+saludo = "Hola "\line
+nombre = "(Escribe aqu\u237? tu nombre)!"\line
+print(saludo+nombre)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 Hola (Escribe aqu\u237? tu nombre)!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Sin embargo, no es as\u237? con todas las operaciones\line
+"""\line
+saludo = "Hola "\line
+nombre = "Fulanito!"\line
+try: #Intentaremos...\line
+  print(saludos-nombre) #Restar dos cadenas de caracteres\line
+except: #Si no funciona...\line
+  print("No puedo restar cadenas de caracteres") #Imprimimos un error\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 No puedo restar cadenas de caracteres\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Funciones\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Ahora, aprenderemos a crear funciones. Estas nos permitir\u225?n reutilizar el c\u243?digo, optimizando nuestro tiempo de desarrollo y haciendo m\u225?s entendible nuestro procedimiento.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Vamos a *def*inir una funci\u243?n que acepte un nombre (cadena de caracteres) y \line
+regrese un saludo cordial\line
+"""\line
+def saluda_a(nombre):\line
+  return "Hola "+nombre+"!"\line
+\line
+# ahora vamos a ingresar un nombre, guardar el resultado e imprimirlo en pantalla\line
+resultado = saluda_a("Fulanito")\line
+print(resultado)\line
+\line
+# Intenta ahora ingresando tu nombre e imprimiendo tu resultado en pantalla\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 Hola Fulanito!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 """\line
+Definamos ahora una funci\u243?n que nos regrese el cociente de una divisi\u243?n de enteros\line
+"""\line
+def cociente(p,q):\line
+  return p//q\line
+\line
+# probemos con un par de n\u250?meros\line
+print(cociente(7,3))\line
+\line
+#ahora intenta algo similar para el residuo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 2\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b \u161?Excelente!} Hemos terminado con los conceptos m\u225?s b\u225?sicos para comenzar a \line programar en Python. Pero antes, vamos a practicar con una lista de ejercicios.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Al final, vamos dejarte las respuestas, pero recuerda, {\i \u161?la pr\u225?ctica hace al \line maestro!}\par}
+}
